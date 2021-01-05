@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Log in</title>
+    <style id="applicationStylesheet" type="text/css">
+        .mediaViewInfo {
+            --web-view-name: login new;
+            --web-view-id: login_new;
+            --web-scale-on-resize: true;
+            --web-enable-deep-linking: true;
+        }
+        :root {
+            --web-view-ids: login_new;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+           background-color: black;
+        }
+       
+       
+       
+        #inputemailEmail {
+            left: 100px;
+		top: 287.079px;
+        
+            position: absolute;
+            overflow: visible;
+            width: 59px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Sitka Small;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            color: rgba(255,251,251,1);
+        }
+        #inputpasswordPassword {
+            left: 100px;
+            top: 382px;
+            position: absolute;
+            overflow: visible;
+            width: 97px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Sitka Small;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            color: rgba(255,251,251,1);
+        }
+       
+        #inputemailEmail_bb {
+            left: 106px;
+            top: 509.079px;
+            position: absolute;
+            overflow: visible;
+            width: 65px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Sitka Small;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            color: rgba(254,254,254,1);
+        }
+        #inputemailEmail_bb button:hover{
+         opacity: 0.8;
+        }
+        #inputemailEmail_bc {
+            left: 158px;
+            top: 66.079px;
+            position: absolute;
+            overflow: visible;
+            width: 125px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Sitka Text;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 35px;
+            color: rgba(239,246,242,1);
+        }
+        #Forgot_password_ {
+            left: 158px;
+            top: 461.62px;
+            position: absolute;
+            overflow: visible;
+            width: 140px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Sitka Small;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            color: rgba(252,26,0,1);
+           text-decoration: none;
+        }
+        #You_are_not_a_member_ {
+            left: 75px;
+            top: 587px;
+            position: absolute;
+            overflow: visible;
+            width: 144px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Sitka Small;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            color: rgba(255,251,251,1);
+        }
+        #Register {
+            left: 215px;
+            top: 585px;
+            position: absolute;
+            overflow: visible;
+            width: 64px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Sitka Small;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            color: rgb(46, 78, 219);
+            text-decoration: none;
+
+        }
+       
+        #Group_2 {
+            position: absolute;
+            width: 106px;
+            height: 99px;
+            left: 165px;
+            top: 145px;
+            overflow: visible;
+        }
+        #Group_1 {
+            position: absolute;
+            width: 84px;
+            height: 83px;
+            left: 12px;
+            top: 8px;
+            overflow: visible;
+        }
+        #Ellipse_20 {
+            fill: rgba(255,255,255,1);
+            stroke: rgba(112,112,112,1);
+            stroke-width: 1px;
+            stroke-linejoin: miter;
+            stroke-linecap: butt;
+            stroke-miterlimit: 4;
+            shape-rendering: auto;
+        }
+        .Ellipse_20 {
+            position: absolute;
+            overflow: visible;
+            width: 84px;
+            height: 83px;
+            left: 0px;
+            top: 0px;
+        }
+        #Mask_Group_1 {
+            position: absolute;
+            width: 106px;
+            height: 99px;
+            left: 0px;
+            top: 0px;
+            overflow: visible;
+        }
+        #email
+	{
+		background-color: white;
+	padding: 10px;
+		overflow: visible;
+		width: 240px;
+		height: 40px;
+		left: 90px;
+		top: 313.25px;
+		border-radius: 32px;
+	}
+    #password
+	{
+	
+		background-color: white;
+		padding: 10px;
+		overflow: visible;
+		width: 240px;
+		height: 40px;
+		left: 90px;
+		top: 405.25px;
+		border-radius: 32px;	
+	}
+    #Rectangle_30 {
+		
+		stroke: rgb(255, 252, 252);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_30 {
+		
+		position: absolute;
+		overflow: visible;
+		width: 325px;
+		height: 418px;
+		left: 59px;
+		top: 193px;
+	}
+    #log
+	{
+	
+		
+		overflow: visible;
+		width: 240px;
+		height: 40px;
+		background-color: rgba(17,197,47,1);	
+		cursor: pointer;
+		border-radius: 32px;
+		white-space: nowrap;
+		
+		font-family: Sitka Small;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(254,254,254,1);
+	}
+   .login_new{
+       width: 350px;
+       height: 400px;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       background-color: black;
+       transform: translate(-60%, -80%);
+
+   } 
+  
+    </style>
+
+</head>
+
+
+<body>
+    <div class="bgimg">
+    <form>
+<div class="login_new">
+	
+    <svg class="Rectangle_30">
+        <rect id="Rectangle_30" rx="0" ry="0" x="0" y="0" width="325" height="415">
+        </rect>
+    </svg>
+	<div id="inputemailEmail">
+        <lable  >Email</lable><br>
+        <input type="email"    id="email" name="email">
+	</div>
+	<div id="inputpasswordPassword">
+        <span>Password</span><br>
+        <input type="password"  id="password" name="password">
+	</div>
+	
+   
+	<div id="inputemailEmail_bb">
+        <button id="log">Log In</button>
+        
+	</div>
+	<div id="inputemailEmail_bc">
+		<span>LOG IN</span>
+	</div>
+	<div >
+		<span><a id="Forgot_password_" href="/forgotpass.html">Forgot password? </a></span>
+	</div>
+	<div id="You_are_not_a_member_">
+		<span>You are not a member? </span>
+	</div>
+	<div >
+		<span><a  id="Register" href="/signup.html">Register</a></span>
+	</div>
+	
+	<div id="Group_2">
+		<div id="Group_1">
+			<svg class="Ellipse_20">
+				<ellipse id="Ellipse_20" rx="42" ry="41.5" cx="42" cy="41.5">
+				</ellipse>
+			</svg>
+		</div>
+		<img id="Mask_Group_1" src="Mask_Group_1.png" srcset="Mask_Group_1.png 1x, Mask_Group_1@2x.png 2x">
+			
+		</svg>
+	</div>
+</div>
+</form>
+</div>
+</body>
+
+</html>
